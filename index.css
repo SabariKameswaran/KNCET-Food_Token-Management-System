@@ -1,0 +1,100 @@
+.login1 {
+  position: absolute;
+  top: 263px;
+  left: 625px;
+}
+.login-child,
+.login-item {
+  border: 1px solid var(--color-indianred);
+  outline: 0;
+  background-color: var(--color-whitesmoke-200);
+  position: absolute;
+  top: 429px;
+  left: 434px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 548px;
+  height: 67px;
+}
+.login-item {
+  top: 596px;
+  left: 430px;
+}
+.password,
+.user-name {
+  position: absolute;
+  top: 371px;
+  left: 432px;
+  font-size: var(--font-size-6xl);
+  display: inline-block;
+  width: 272px;
+  height: 34px;
+}
+.password {
+  top: 540px;
+  left: 430px;
+}
+.forgot-password {
+  white-space: pre-wrap;
+}
+.click-here-to {
+  color: var(--color-navy);
+}
+.forgot-password-click-container {
+  text-decoration: none;
+  position: absolute;
+  top: 814px;
+  left: 430px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  width: 548px;
+  height: 34px;
+  color: inherit;
+}
+.login-inner {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-steelblue);
+  position: absolute;
+  top: 703px;
+  left: 508px;
+  border-radius: var(--br-29xl);
+  width: 393px;
+  height: 89px;
+}
+.login-inner:hover {
+  background-color: var(--color-darkslategray);
+}
+.login2 {
+  position: absolute;
+  top: 695px;
+  left: 625px;
+}
+.logo-with-name-google-forms-1 {
+  position: absolute;
+  top: 19px;
+  left: -76px;
+  width: 554px;
+  height: 136px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.kncet-cafeteria {
+  position: absolute;
+  top: 87px;
+  left: calc(50% - 231px);
+  color: var(--color-navy);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.login {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-inknut-antiqua);
+}

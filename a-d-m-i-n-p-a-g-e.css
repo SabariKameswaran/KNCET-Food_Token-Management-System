@@ -1,0 +1,126 @@
+.logo-with-name-google-forms-13 {
+  position: absolute;
+  top: 19px;
+  left: -76px;
+  width: 554px;
+  height: 136px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.admin-panel,
+.kncet-cafeteria3 {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 231px);
+  font-size: var(--font-size-21xl);
+  color: var(--color-navy);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.admin-panel {
+  top: 87px;
+  left: calc(50% - 169px);
+}
+.menu1 {
+  position: absolute;
+  top: 210px;
+  left: 66px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-9xl);
+  background-color: var(--color-white);
+  width: 1308px;
+  height: 767px;
+}
+.list-of-orders {
+  position: absolute;
+  top: 254px;
+  left: 107px;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+.admin-page-child {
+  position: absolute;
+  top: 317px;
+  left: 103px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-gainsboro);
+  width: 1236px;
+  height: 130px;
+}
+.amount-paid,
+.food-id-and,
+.token-number,
+.transaction-id {
+  position: absolute;
+  top: 320px;
+  left: 117px;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+.amount-paid,
+.food-id-and,
+.transaction-id {
+  top: 346px;
+}
+.amount-paid,
+.transaction-id {
+  top: 405px;
+  left: 930px;
+}
+.transaction-id {
+  left: 117px;
+}
+.token-no {
+  position: absolute;
+  top: 331px;
+  left: 303px;
+  width: 106px;
+  height: 15px;
+  overflow: hidden;
+}
+.admin-page-item {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-steelblue);
+  position: absolute;
+  top: 406px;
+  left: 1181px;
+  border-radius: 23px;
+  width: 135px;
+  height: 34px;
+}
+.admin-page-item:hover {
+  background-color: var(--color-darkslategray);
+}
+.food-id-name {
+  position: absolute;
+  top: 361px;
+  left: 315px;
+  width: 1017px;
+  height: 47px;
+  overflow: hidden;
+}
+.delivered {
+  position: absolute;
+  top: 410px;
+  left: 1199px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  color: var(--color-white);
+  display: inline-block;
+  width: 109px;
+  height: 20px;
+}
+.admin-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inknut-antiqua);
+}

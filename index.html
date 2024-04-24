@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>KNCET CAFETERIA</title>
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inknut Antiqua:wght@400;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lemon:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <div class="login1">LOGIN</div>
+      <form id="loginForm">
+        <label class="user-name">User Name :</label>
+        <input
+        class="login-child"
+        name="user_name"
+        id="user_name"
+        placeholder="Enter your Username"
+        type="text"
+      />
+      <label class="password">Password :</label>
+      <input
+        class="login-item"
+        name="password"
+        id="password"
+        placeholder="Enter your Password"
+        type="password"
+      />
+      <button class="login-inner" type="submit" style="font-size: large;">LOGIN</button>
+    </form>
+      <a
+        class="forgot-password-click-container"
+        id="forgotpageredirect"
+        href="./f-o-r-g-e-t-p-a-s-s-w-o-r-d.html"
+      >
+        <span class="forgot-password">Forgot Password? </span>
+        <span class="click-here-to">Click here to Reset Password.</span>
+      </a>
+      <img
+        class="logo-with-name-google-forms-1"
+        alt="kongunadu-instituition"
+        src="./public/klogo@2x.png"
+      />
+
+      <div class="kncet-cafeteria">KNCET CAFETERIA</div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("user_name").value;
+    var password = document.getElementById("password").value;
+    var formData = {
+        email: username,
+        password: password
+    };
+    fetch('http://localhost:8000/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        // console.log(data);
+        if(data.success === true && data.user.role === "user") {
+          window.location.href = "m-e-n-u-c-a-r-d.html";
+        }
+        else if (data.success === true && data.user.role === "admin") {
+          window.location.href = "a-d-m-i-n-p-a-g-e.html"
+        }
+
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+    </script>
+  </body>
+</html>
